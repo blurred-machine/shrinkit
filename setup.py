@@ -9,8 +9,8 @@ DESCRIPTION = 'The package that helps to compress everything for ML/AI projects.
 URL = 'https://github.com/blurred-machine/shrinkit'
 EMAIL = 'paras.varshney97@gmail.com'
 AUTHOR = 'Paras Varshney'
-REQUIRES_PYTHON = '>=3.12.0'
-VERSION = '0.0.1'
+REQUIRES_PYTHON = '>=3.10.0'
+VERSION = '0.0.2'
 
 REQUIRED = [
     # 'requests', 'maya', 'records',

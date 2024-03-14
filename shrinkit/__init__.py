@@ -1,1 +1,1 @@
-from main import *
+from shrinkit.main import *
