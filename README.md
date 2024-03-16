@@ -1,2 +1,3 @@
 # shrinkit
-Losless Compression Library for ML/AI
+A GUI based Auto ML training package
+
