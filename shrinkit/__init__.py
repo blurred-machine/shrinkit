@@ -1,1 +1,1 @@
-from shrinkit.main import *
+from shrinkit.runner import *
