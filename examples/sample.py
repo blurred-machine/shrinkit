@@ -1,4 +1,4 @@
 from shrinkit import ShrinkitRunner
 
 runner = ShrinkitRunner()
-runner.run()
+runner.streamlit_run()
