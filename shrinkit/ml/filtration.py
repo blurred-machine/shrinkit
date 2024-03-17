@@ -8,13 +8,13 @@ class DataFiltration:
 
     def filter_data(self, status):
         id_column = st.sidebar.selectbox('Choose ID Column', ['none'] + list(self.data.columns))
-        target_columns = st.sidebar.multiselect('Choose Target Columns', self.data.columns)
-        print(target_columns)
+        target_column = st.sidebar.selectbox('Choose Target Column', self.data.columns)
+        print(target_column)
 
-        if len(target_columns) >= 0:
+        if target_column:
             status.markdown("#### Status: Target Column Chosen.")
-            X = self.data.drop(target_columns, axis=1)
-            y = self.data.loc[:, target_columns]
+            X = self.data.drop([target_column], axis=1)
+            y = self.data.loc[:, [target_column]]
         else:
             status.markdown("#### Status: Choosing Target Columns...")
 

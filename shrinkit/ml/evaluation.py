@@ -34,8 +34,8 @@ class CustomEvaluation:
                 results.loc['RMSLE', model_name] = rmsle
                 results.loc['R2', model_name] = r2
                 results.loc['adjusted_R2', model_name] = adjusted_r2
-            # results = results.reset_index()
-            results.index = results.index.set_names(['Models Name'])
+            results = results.transpose()
+            results.index = results.index.set_names(['Models Name    '])
             return results
 
 
