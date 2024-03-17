@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 
-from shrinkit.imputation import CustomImputer
-from shrinkit.filtration import DataFiltration
-from shrinkit.machine_learning import MLModeling
-from shrinkit.encoding import CustomEncoding
-from shrinkit.normalization import CustomNormalizer
-from shrinkit.evaluation import CustomEvaluation
+from imputation import CustomImputer
+from filtration import DataFiltration
+from machine_learning import MLModeling
+from encoding import CustomEncoding
+from normalization import CustomNormalizer
+from evaluation import CustomEvaluation
 
 import warnings
 warnings.filterwarnings("ignore")
