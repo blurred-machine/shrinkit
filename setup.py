@@ -10,10 +10,10 @@ URL = 'https://github.com/blurred-machine/shrinkit'
 EMAIL = 'paras.varshney97@gmail.com'
 AUTHOR = 'Paras Varshney'
 REQUIRES_PYTHON = '>=3.10.0'
-VERSION = '0.1.8'
+VERSION = '0.1.9'
 
 REQUIRED = [
-    'streamlit', 'pandas', 'numpy', 'scipy', 'scikit-learn', 'ydata-profiling'
+    'streamlit', 'pandas', 'numpy', 'scipy', 'scikit-learn', 'ydata-profiling', 'streamlit_ydata_profiling'
 ]
 
 # What packages are optional?
