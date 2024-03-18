@@ -25,4 +25,4 @@ Source Code: [https://github.com/blurred-machine/shrinkit](https://github.com/bl
 Contributions to Shrinkit are welcome! Feel free to submit bug reports, feature requests, or pull requests on the GitHub repository.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
+This project is licensed under the Apache License - see the [LICENSE](/LICENSE) file for details.

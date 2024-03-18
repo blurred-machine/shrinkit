@@ -1,6 +1,8 @@
 pandas
 numpy
-scikit-learn
 scipy
 ydata-profiling
 streamlit_ydata_profiling
+matplotlib
+scikit-learn
+python3-sklearn
