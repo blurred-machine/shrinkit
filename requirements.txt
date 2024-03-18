@@ -51,7 +51,6 @@ referencing==0.34.0
 requests==2.31.0
 rich==13.7.1
 rpds-py==0.18.0
-scikit-learn
 scipy
 seaborn==0.12.2
 six==1.16.0
@@ -76,3 +75,4 @@ joblib
 streamlit-ydata-profiling
 visions
 ydata-profiling
+scikit-learn
