@@ -1,4 +1,10 @@
-from shrinkit.main import *
+from main import *
+
+import streamlit as st
+st.set_page_config(layout="wide", initial_sidebar_state="expanded")
+
+
+
 # import os
 # import sys
 # import streamlit.web.cli as stcli
