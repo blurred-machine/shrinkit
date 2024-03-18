@@ -74,5 +74,5 @@ watchdog==3.0.0
 wordcloud==1.9.3
 joblib
 streamlit-ydata-profiling
-visions
 ydata-profiling==4.6.5
+visions
