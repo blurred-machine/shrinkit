@@ -18,6 +18,18 @@ from ml.evaluation import CustomEvaluation
 import warnings
 warnings.filterwarnings("ignore")
 
+
+st.markdown(
+    """
+    <style>
+        section[data-testid="stSidebar"] {
+            width: 500px !important; # Set the width to your desired value
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 class Shrinkit():
     def __init__(self):
         st.markdown("# Shrink-it Playground! 🚀")
@@ -136,9 +148,11 @@ class Shrinkit():
             st.sidebar.divider()
             st.sidebar.title('Machine Learning:')
             show_ml_results = st.sidebar.toggle(label='Show Training Results', key="show training metric results")
-            c1, c2 = st.sidebar.columns(2)
-            show_predictions = c1.toggle(label='Show Predictions', key="show predictions data")
-            show_plot = c2.checkbox("Plot")
+            if show_ml_results:
+                c1, c2 = st.sidebar.columns(2)
+                show_predictions = c1.toggle(label='Show Predictions', key="show predictions data")
+                show_plot = c2.checkbox("Plot")
+
             ml_modeling = MLModeling(X_train, X_test, y_train, y_test)
             predictions_dict, cateogry = ml_modeling.compute_ML()
 
@@ -150,14 +164,14 @@ class Shrinkit():
                 st.write(matrix_table)
                 st.divider()
 
-            if show_predictions:
-                st.markdown(f"### Predictions: ({len(predictions_dict)})")
-                st.write(predictions_dict)
-                st.divider()
+                if show_predictions:
+                    st.markdown(f"### Predictions: ({len(predictions_dict)})")
+                    st.write(predictions_dict)
+                    st.divider()
 
-            if show_plot:
-                st.line_chart(matrix_table.transpose())
-            
+                if show_plot:
+                    st.line_chart(matrix_table.transpose())
+                
 
 
 if __name__ == "__main__":
