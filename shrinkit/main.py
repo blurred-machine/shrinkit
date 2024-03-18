@@ -135,7 +135,9 @@ class Shrinkit():
             st.sidebar.divider()
             st.sidebar.title('Machine Learning:')
             show_ml_results = st.sidebar.toggle(label='Show Training Results', key="show training metric results")
-            show_predictions = st.sidebar.toggle(label='Show Predictions', key="show predictions data")
+            c1, c2 = st.sidebar.columns(2)
+            show_predictions = c1.toggle(label='Show Predictions', key="show predictions data")
+            show_plot = c2.checkbox("Plot")
             ml_modeling = MLModeling(X_train, X_test, y_train, y_test)
             predictions_dict, cateogry = ml_modeling.compute_ML()
 
@@ -151,6 +153,9 @@ class Shrinkit():
                 st.markdown(f"### Predictions: ({len(predictions_dict)})")
                 st.write(predictions_dict)
                 st.divider()
+
+            if show_plot:
+                st.line_chart(matrix_table.transpose())
             
 
 

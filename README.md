@@ -16,6 +16,9 @@ To install Shrinkit, simply use pip:
 pip install shrinkit
 ```
 
+## Sample Usage
+![Sample Training Usage](/graphics/sample_training.png)
+
 ## Links
 Streamlit App: [https://shrinkit.streamlit.app/](https://shrinkit.streamlit.app/)</br>
 PyPI Package: [https://pypi.org/project/shrinkit/](https://pypi.org/project/shrinkit/)</br>
