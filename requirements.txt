@@ -72,4 +72,4 @@ visions==0.7.5
 watchdog==3.0.0
 wordcloud==1.9.3
 ydata-profiling==4.6.5
-streamlit_ydata_profiling
+streamlit_pandas_profiling
