@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from ydata_profiling import ProfileReport
-from streamlit_ydata_profiling import st_profile_report
+# from streamlit_ydata_profiling import st_profile_report
 
 
 from ml.imputation import CustomImputer
@@ -55,7 +55,8 @@ class Shrinkit():
         if self.is_data_available and show_data_profiling:
             st.markdown("### Data Analysis Results & Visualizations:")
             profile = ProfileReport(self.data, title="Pandas Profiling Report", minimal=True, explorative=True)
-            st_profile_report(profile, navbar=True)
+            # st_profile_report(profile, navbar=True)
+            st.write(profile)
         else:
             status.markdown("#### Status: Please upload dataset...")
 
