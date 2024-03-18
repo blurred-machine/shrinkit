@@ -7,12 +7,12 @@ from ydata_profiling import ProfileReport
 from streamlit_ydata_profiling import st_profile_report
 
 
-from shrinkit.ml.imputation import CustomImputer
-from shrinkit.ml.filtration import DataFiltration
-from shrinkit.ml.machine_learning import MLModeling
-from shrinkit.ml.encoding import CustomEncoding
-from shrinkit.ml.normalization import CustomNormalizer
-from shrinkit.ml.evaluation import CustomEvaluation
+from ml.imputation import CustomImputer
+from ml.filtration import DataFiltration
+from ml.machine_learning import MLModeling
+from ml.encoding import CustomEncoding
+from ml.normalization import CustomNormalizer
+from ml.evaluation import CustomEvaluation
 
 import warnings
 warnings.filterwarnings("ignore")
