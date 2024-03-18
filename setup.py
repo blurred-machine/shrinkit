@@ -13,7 +13,7 @@ REQUIRES_PYTHON = '>=3.10.0'
 VERSION = '0.1.5'
 
 REQUIRED = [
-    'streamlit', 'pandas', 'numpy', 'scipy', 'scikit-learn', 'ydata-profiling'
+    'streamlit', 'pandas', 'numpy', 'scipy', 'scikit-learn', 'ydata-profiling', 'shrinkit'
 ]
 
 # What packages are optional?
